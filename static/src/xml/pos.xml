@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+	<t t-name="OrderChangeReceipt" t-inherit="pos_restaurant.OrderChangeReceipt" t-inherit-mode="extension" owl="1">
+
+		<xpath expr="//div[hasclass('pos-receipt-order-data')]" position="after">
+			<div>
+				Customer : 
+				<span t-esc="changes.client" />
+			</div>
+		</xpath>
+
+		<xpath expr="//t[@t-if='changes.floor || changes.table']" position="after">
+			<div>
+				Served By : 
+				<span t-esc="changes.cashier" />
+			</div>
+		</xpath>
+		
+	</t>
+</templates>
