@@ -4,7 +4,7 @@
 	<t t-name="OrderChangeReceipt" t-inherit="pos_restaurant.OrderChangeReceipt" t-inherit-mode="extension" owl="1">
 
 		<xpath expr="//div[hasclass('pos-receipt-order-data')]" position="after">
-			<div align="center" style="font-size:22px">
+			<div align="center" style="font-size:24px">
 				Cliente: 
 				<strong t-esc="changes.client" />
 			</div>
