@@ -13,7 +13,7 @@
 		<xpath expr="//t[@t-if='changes.floor || changes.table']" position="after">
 			<div align="center" style="font-size:22px">
 				Atendido por: : 
-				<strong t-esc="changes.cashier" />
+				<span t-esc="changes.cashier" />
 			</div>
 		</xpath>
 		
